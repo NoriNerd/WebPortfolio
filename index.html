@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device=width, initial-scale=1.0">
+        <link rel = "stylesheet" href ="./style.css">
+        <title> Our personal website</title>
+    </head> <!-- The header of the website-->
+
+    <body> <!-- The body of the website-->
+        <div class="container">
+            <div class="nav-container">
+                <ul class="nav">
+                    <li class="nav-item"> <a class="nav-link" href = "#home"> <!--linked list element-->Home</a></li> <!-- list element-->
+                    <li class="nav-item"> <a class="nav-link" href = "#about">About</a></li>
+                    <li class="nav-item"> <a class="nav-link" href = "#contacts">Contacts</a></li>
+                    <li class="nav-item"> <a class="nav-link" href = "#projects">Projects</a></li>
+                </ul>
+            </div>
+            
+
+            <div id = "home"> <!--Section??-->
+                <div>
+                    <h1 class="home-title">Hi, I'm <span>Eleanor Tien</span></h1>
+                    <h2 class="home-description">I'm a <span>18</span> year old student at TMU</h2>
+                    <div class="home-button">
+                        <a href = "#about"><button class="generic-button">View More</button></a> <!--Make a linked button-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id = "about"> <!--Finds section in css-->
+
+                <div class="content-section-1">
+                    <img class="content-image" src="" alt="Eleanor Tien"/> <!-- alt adds text when image not found-->
+                </div>
+                <div class="content-section-2">
+                    <h2 class="content-section-title"> About Me</h2>
+                    <p class="content-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusamus recusandae autem consequatur ipsam laboriosam, sit assumenda quis aliquam suscipit velit, corrupti nulla ipsum aut alias. Ad beatae ex sit?</p> <!--alt z to format paragraph-->
+                </div>
+
+            </div>
+
+            <div id = "projects">
+                <h2 class="content-section-title">Projects</h2>
+                <div class="project-list">
+                    <!-- one project -->
+                    <div class="project-item">
+                        <div class="project-image-container"><img class = "project-image-thumbnail" src="" alt = "project item"/></div>
+                        <div class = "content-section-text">
+                            <h3 class = "projecy-title">Project Name</h3>
+                            <p>project description</p>
+                            <a href=""><button class="generic-button">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content" id = "contact"> <!--Finds section in css-->
+                <div class="content-section-2">
+                    <h2 class="content-section-title"> Contacts</h2>
+                    <p class="content-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusamus recusandae autem consequatur ipsam laboriosam, sit assumenda quis aliquam suscipit velit, corrupti nulla ipsum aut alias. Ad beatae ex sit?</p> <!--alt z to format paragraph-->
+                </div>
+
+                <div class="content-section-1">
+                    <img class="content-image" src="" alt="Eleanor Tien"/> <!-- alt adds text when image not found-->
+                </div>
+             
+            </div>
+    </div>
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>  
+        // JavaScript
+        let currentYear = new Date().getFullYear();
+        let birthYear = 2004;
+
+        document.getElementByID("currentAge").innterHTML = currentYear - birthYear;
+
+        let typed = new Typed(".auto-type", {strings:["Richard Marquez", "Frontend Developer", "Survivor"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+        showCursor: false
+    })
+
+
+
+    </script>
+</html>
