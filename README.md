@@ -1,2 +1,3 @@
 # WebPortfolio
-Website Portfolio
+Website Portfolio, currently in development
+
